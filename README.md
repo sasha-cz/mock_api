@@ -1,6 +1,15 @@
 # mock_api
-Here you'll find a mock API for testing purposes.
 
-### Warning: The python module 'http.server' used in this project is not recommended for production. It only implements basic security checks. 
+## Project Overview
+My goal was to create a simple mock API for testing purposes and deploy it. To achieve this, I created a database file containing the API data as well as a small backend for deployment.
 
-I decided to use this module for learning purposes.
+## Key learnings
+### From `http.server` to Flask
+The Python module `http.server`, which was previously used in this project for server functionality, is not recommended for production due to its limitations and lack of security features. It only implements basic security checks. Therefore, I transitioned to using the Flask framework for the final version of my mock API.
+
+### Deployment on render.com
+I deployed the mock API on Render.com. You can access it via the following URL: [https://mock-api-books-1dn8.onrender.com/](https://mock-api-books-1dn8.onrender.com/).
+
+
+
+
