@@ -7,10 +7,16 @@ app = Flask(__name__)
 # Import the 'mock_api' data from the 'db' module representing your database.
 from db import mock_api
 
+# Store an API key in an environment variable and fetch the API key from the operating system
+API_KEY = os.environ.get("API_KEY")
+
 # Use the decorator function 'route' from the Flask app object to define a route for the '/mock-api/books' URL
 @app.route("/", methods=["GET"])
 def index():
+    api_key = request.args.get("api_key")
     if request.method=="GET":
+        if api_key is None or api_key != API_KEY:
+            return jsonify({"error": "Invalid API key"}), 401
 # Serialize mock_api to json format and create a JSON response
         return jsonify(mock_api)
 # Run the Flask development server on all available network interfaces with debugging turned off,
