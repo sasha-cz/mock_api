@@ -1,7 +1,7 @@
 # mock_api
 
 ## Project Overview
-My goal was to create a simple mock API for testing purposes and deploy it. To achieve this, I created a database file containing the API data as well as a small backend for deployment. Additionally, I implemented API key authentication to test this functionality in other projects.
+My goal was to create a simple mock API for testing purposes and deploy it on Render.com. To achieve this, I created a database file containing the API data as well as a small backend for deployment. Additionally, I implemented API key authentication to test this functionality in other projects.
 
 ## Key Learnings
 ### From `http.server` to Flask
