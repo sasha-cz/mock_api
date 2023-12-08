@@ -8,7 +8,7 @@ app = Flask(__name__)
 from db import mock_api
 
 # Use the decorator function 'route' from the Flask app object to define a route for the '/mock-api/books' URL
-@app.route("/mock-api/books", methods=["GET"])
+@app.route("/", methods=["GET"])
 def index():
     if request.method=="GET":
 # Serialize mock_api to json format and create a JSON response
