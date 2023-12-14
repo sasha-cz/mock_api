@@ -17,7 +17,7 @@ def index():
     if request.method=="GET":
         if api_key is None or api_key != API_KEY:
             return jsonify({"error": "Invalid API key"}), 401
-# Serialize mock_api to json format and create a JSON response.
+# Serialize data to json format and create a JSON response.
         return jsonify(data)
     
 # Run the Flask development server on all available network interfaces with debugging turned off,
