@@ -1,4 +1,4 @@
-mock_api = {
+data = {
     "books": [
       {
         "id": 0,
