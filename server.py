@@ -10,7 +10,7 @@ from db import mock_api
 # Retrieve the API key from the environment variable.
 API_KEY = os.environ.get("API_KEY")
 
-# Use the decorator function 'route' from the Flask app object to set the root path and implement API key authentication. 
+# Set up API Endpoint: Use the decorator function 'route' from the Flask app object to set the root path and implement API key authentication. 
 @app.route("/", methods=["GET"])
 def index():
     api_key = request.args.get("api_key")
