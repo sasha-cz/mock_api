@@ -4,7 +4,7 @@ import os
 #The app object is declared by the Flask class.
 app = Flask(__name__)
 
-# Import the 'mock_api' data from the 'db' module representing your database.
+# Import data from the 'db' module representing your database.
 from db import data
 
 # Retrieve the API key from the environment variable.
