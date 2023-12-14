@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Import the 'mock_api' data from the 'db' module representing your database.
-from db import mock_api
+from db import data
 
 # Retrieve the API key from the environment variable.
 API_KEY = os.environ.get("API_KEY")
@@ -18,7 +18,7 @@ def index():
         if api_key is None or api_key != API_KEY:
             return jsonify({"error": "Invalid API key"}), 401
 # Serialize mock_api to json format and create a JSON response.
-        return jsonify(mock_api)
+        return jsonify(data)
     
 # Run the Flask development server on all available network interfaces with debugging turned off,
 # suitable for deployment on platforms like Render.com.
