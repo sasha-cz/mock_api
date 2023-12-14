@@ -11,10 +11,11 @@ The Python module `http.server`, which was previously used in this project for s
 I took the time to learn how Python decorators work and how to use them to better understand the construction of a Flask server.
 
 ### Deployment on Render.com
-I deployed the mock API with Render.com. You can access it via the following URL: [https://mock-api-books-1dn8.onrender.com/](https://mock-api-books-1dn8.onrender.com/). 
+I deployed this project with Render.com. Here you can access the mock data using the following API endpoint and API key: 
 
-If you receive an error message with the content `"error": "Invalid API key,"` it indicates that the webpage is displayed correctly. The API key is intentionally not publicly accessible for security reasons.
+[https://mock-api-books-1dn8.onrender.com/?api_key=my_supersecret_api_key](https://mock-api-books-1dn8.onrender.com/?api_key=my_supersecret_api_key)
 
+If you use the URL without adding the (correct) API-key, you will receive an error message with the content `"error": "Invalid API key,"`. This indicates that the API authentication works correctly. You can test the response without providing any API key here:
 
-
+[https://mock-api-books-1dn8.onrender.com/](https://mock-api-books-1dn8.onrender.com/). 
 
